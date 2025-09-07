@@ -26,6 +26,45 @@ export default function Home() {
         <div className="flex-1 flex flex-col gap-20 max-w-5xl p-5">
           <Hero />
           <main className="flex-1 flex flex-col gap-6 px-4">
+            <h2 className="font-medium text-xl mb-4">Features</h2>
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-8">
+              <div className="border rounded-lg p-6 hover:shadow-lg transition-shadow">
+                <h3 className="font-semibold text-lg mb-2">📝 Notes Management</h3>
+                <p className="text-sm text-muted-foreground">
+                  Create, organize, and manage your personal notes with a beautiful interface.
+                </p>
+              </div>
+              <div className="border rounded-lg p-6 hover:shadow-lg transition-shadow">
+                <h3 className="font-semibold text-lg mb-2">✅ Todo Lists</h3>
+                <p className="text-sm text-muted-foreground">
+                  Keep track of your tasks with priority levels, due dates, and completion status.
+                </p>
+              </div>
+              <div className="border rounded-lg p-6 hover:shadow-lg transition-shadow">
+                <h3 className="font-semibold text-lg mb-2">🔐 Secure Authentication</h3>
+                <p className="text-sm text-muted-foreground">
+                  Your data is protected with Supabase Auth and Row Level Security.
+                </p>
+              </div>
+              <div className="border rounded-lg p-6 hover:shadow-lg transition-shadow">
+                <h3 className="font-semibold text-lg mb-2">🌙 Dark Mode</h3>
+                <p className="text-sm text-muted-foreground">
+                  Toggle between light and dark themes for comfortable viewing.
+                </p>
+              </div>
+              <div className="border rounded-lg p-6 hover:shadow-lg transition-shadow">
+                <h3 className="font-semibold text-lg mb-2">⚡ Real-time Updates</h3>
+                <p className="text-sm text-muted-foreground">
+                  Changes are instantly saved and synced across all your devices.
+                </p>
+              </div>
+              <div className="border rounded-lg p-6 hover:shadow-lg transition-shadow">
+                <h3 className="font-semibold text-lg mb-2">📱 Responsive Design</h3>
+                <p className="text-sm text-muted-foreground">
+                  Works perfectly on desktop, tablet, and mobile devices.
+                </p>
+              </div>
+            </div>
             <h2 className="font-medium text-xl mb-4">Next steps</h2>
             {hasEnvVars ? <SignUpUserSteps /> : <ConnectSupabaseSteps />}
           </main>
