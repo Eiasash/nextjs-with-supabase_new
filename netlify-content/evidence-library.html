@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evidence Library - Geriatrics Excellence Platform</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .module-card { transition: all 0.3s ease; cursor: pointer; }
+    .module-card:hover { transform: translateY(-4px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+  </style>
+  <meta name="description" content="Curated evidence summaries, landmark trials, and MOH guidelines for geriatrics at Shaare Zedek." />
+</head>
+<body class="bg-gray-50">
+  <div class="container mx-auto p-6">
+    <header class="mb-8">
+      <div class="flex items-center justify-between">
+        <div>
+          <h1 class="text-3xl md:text-4xl font-bold text-gray-900">Evidence Library</h1>
+          <p class="text-gray-600 mt-2">Shaare Zedek Medical Center — Geriatrics Fellowship Platform</p>
+        </div>
+        <a href="/" class="text-indigo-600 hover:text-indigo-800 text-sm">← Back to Home</a>
+      </div>
+    </header>
+
+    <!-- Quick Filters / Sections -->
+    <nav class="mb-8">
+      <ul class="flex flex-wrap gap-3 text-sm">
+        <li><a href="#landmark-trials" class="px-3 py-1 rounded border text-gray-700 hover:bg-gray-100">Landmark Trials</a></li>
+        <li><a href="#guidelines" class="px-3 py-1 rounded border text-gray-700 hover:bg-gray-100">Guidelines</a></li>
+        <li><a href="#tools" class="px-3 py-1 rounded border text-gray-700 hover:bg-gray-100">Clinical Tools</a></li>
+        <li><a href="#deprescribing" class="px-3 py-1 rounded border text-gray-700 hover:bg-gray-100">Deprescribing</a></li>
+      </ul>
+    </nav>
+
+    <!-- Landmark Trials -->
+    <section id="landmark-trials" class="mb-10">
+      <h2 class="text-2xl font-bold mb-4 text-indigo-700">Landmark Trials</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <article class="bg-white rounded-lg p-6 border module-card">
+          <h3 class="font-semibold text-lg">HYVET (2008) — Hypertension in the Very Elderly</h3>
+          <p class="text-gray-600 mt-2 text-sm">Antihypertensive therapy in patients ≥80 years reduced stroke (30%) and heart failure (64%) with indapamide ± perindopril.</p>
+          <div class="mt-3 flex items-center gap-2 text-xs">
+            <span class="bg-green-100 text-green-800 px-2 py-1 rounded">Practice-changing</span>
+            <a class="text-indigo-600 hover:underline" href="https://www.nejm.org/doi/full/10.1056/NEJMoa0801369" target="_blank" rel="noreferrer">NEJM</a>
+          </div>
+        </article>
+        <article class="bg-white rounded-lg p-6 border module-card">
+          <h3 class="font-semibold text-lg">SPRINT (2015) — Intensive BP Target</h3>
+          <p class="text-gray-600 mt-2 text-sm">SBP target <120 vs <140 mmHg reduced CV events and mortality in high-risk adults; subgroup analyses include older adults with careful monitoring for AEs.</p>
+          <div class="mt-3 flex items-center gap-2 text-xs">
+            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">High impact</span>
+            <a class="text-indigo-600 hover:underline" href="https://www.nejm.org/doi/full/10.1056/NEJMoa1511939" target="_blank" rel="noreferrer">NEJM</a>
+          </div>
+        </article>
+        <article class="bg-white rounded-lg p-6 border module-card">
+          <h3 class="font-semibold text-lg">STOPP/START v2 — Potentially Inappropriate Prescribing</h3>
+          <p class="text-gray-600 mt-2 text-sm">Structured criteria to identify medications to stop or start in older adults; improves prescribing quality and reduces ADRs.</p>
+          <div class="mt-3 flex items-center gap-2 text-xs">
+            <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded">Core geriatrics</span>
+            <a class="text-indigo-600 hover:underline" href="https://academic.oup.com/ageing/article/44/2/213/2812230" target="_blank" rel="noreferrer">Age and Ageing</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Guidelines -->
+    <section id="guidelines" class="mb-10">
+      <h2 class="text-2xl font-bold mb-4 text-indigo-700">Guidelines</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <article class="bg-white rounded-lg p-6 border">
+          <h3 class="font-semibold">Beers Criteria (2023)</h3>
+          <p class="text-gray-600 mt-2 text-sm">Lists potentially inappropriate medications in older adults; incorporate renal dose adjustments and drug–disease interactions.</p>
+          <div class="mt-3 text-xs flex items-center gap-2">
+            <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Reference</span>
+            <a class="text-indigo-600 hover:underline" href="https://agsjournals.onlinelibrary.wiley.com/doi/10.1111/jgs.18372" target="_blank" rel="noreferrer">J Am Geriatr Soc</a>
+          </div>
+        </article>
+        <article class="bg-white rounded-lg p-6 border">
+          <h3 class="font-semibold">MOH Israel — Delirium & Restraints Guidance</h3>
+          <p class="text-gray-600 mt-2 text-sm">Non-pharmacologic first; minimize deliriogenic meds; clear documentation for physical restraints with time-limited orders.</p>
+          <div class="mt-3 text-xs flex items-center gap-2">
+            <span class="bg-red-100 text-red-800 px-2 py-1 rounded">Local policy</span>
+            <a class="text-indigo-600 hover:underline" href="https://www.health.gov.il/" target="_blank" rel="noreferrer">MOH Portal</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Clinical Tools -->
+    <section id="tools" class="mb-10">
+      <h2 class="text-2xl font-bold mb-4 text-indigo-700">Clinical Tools</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <article class="bg-white rounded-lg p-6 border module-card" onclick="location.href='anticoag-synthesizer.html'">
+          <h3 class="font-semibold">CHA₂DS₂-VASc + Renal Dosing</h3>
+          <p class="text-gray-600 mt-2 text-sm">Link to platform calculator; include creatinine clearance estimate and dose ranges.</p>
+          <div class="mt-3 text-xs flex items-center gap-2">
+            <span class="bg-green-100 text-green-800 px-2 py-1 rounded">Ready</span>
+          </div>
+        </article>
+        <article class="bg-white rounded-lg p-6 border module-card">
+          <h3 class="font-semibold">FRAIL / Clinical Frailty Scale</h3>
+          <p class="text-gray-600 mt-2 text-sm">Quick reference and thresholds for risk stratification in older adults.</p>
+          <div class="mt-3 text-xs flex items-center gap-2">
+            <span class="bg-gray-100 text-gray-800 px-2 py-1 rounded">Reference</span>
+          </div>
+        </article>
+        <article class="bg-white rounded-lg p-6 border module-card">
+          <h3 class="font-semibold">STOPP/START Quick Cards</h3>
+          <p class="text-gray-600 mt-2 text-sm">Common PIMs to stop; high-value meds to start. Optimized for mobile rounds.</p>
+          <div class="mt-3 text-xs flex items-center gap-2">
+            <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded">Core geriatrics</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Deprescribing -->
+    <section id="deprescribing" class="mb-10">
+      <h2 class="text-2xl font-bold mb-4 text-indigo-700">Deprescribing</h2>
+      <div class="bg-white rounded-lg p-6 border">
+        <ol class="list-decimal pl-5 text-gray-700 text-sm space-y-2">
+          <li>Identify high-risk medications (anticholinergics, benzos, Z-drugs, antipsychotics when not indicated).</li>
+          <li>Assess indication, time-to-benefit, and patient goals of care.</li>
+          <li>Plan taper schedules; monitor withdrawal and symptom recurrence.</li>
+          <li>Communicate clearly with patients and caregivers; provide written plans.</li>
+        </ol>
+        <div class="mt-3 text-xs">
+          <a class="text-indigo-600 hover:underline" href="https://deprescribing.org/resources/deprescribing-guidelines-algorithms/" target="_blank" rel="noreferrer">Deprescribing.org Algorithms</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-center text-xs text-gray-500 py-10">
+      <p>© <span id="year"></span> Shaare Zedek Medical Center — Geriatrics Fellowship Platform</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
